@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/efredine/node-postgres/issues"
   },
-  "homepage": "https://github.com/efredine/node-postgres#readme"
+  "homepage": "https://github.com/efredine/node-postgres#readme",
+  "dependencies": {
+    "pg": "^6.1.0"
+  }
 }
