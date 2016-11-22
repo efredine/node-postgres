@@ -1,14 +1,7 @@
 const pg = require("pg");
 module.exports = function(settings) {
   return function(sql, params, callback) {
-    const client = new pg.Client({
-      user: settings.user,
-      password: settings.password,
-      database: settings.database,
-      host: settings.hostname,
-      port: settings.port,
-      ssl: settings.ssl
-    });
+    const client = new pg.Client(settings);
     client.connect((err) => {
       if (err) {
         return console.error("Connection Error", err);
