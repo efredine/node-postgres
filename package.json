@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/efredine/node-postgres#readme",
   "dependencies": {
+    "knex": "^0.12.6",
     "pg": "^6.1.0"
   }
 }
